@@ -1,0 +1,52 @@
+{
+  "app": {
+    "name": "Rupie"
+  },
+  "home": {
+    "greeting": "Halo,",
+    "subtitle": "Siap catat pengeluaranmu?",
+    "placeholder": "Dashboard kamu akan muncul di sini.",
+    "logout": "Keluar"
+  },
+  "login": {
+    "title": "Selamat datang kembali",
+    "subtitle": "Masuk ke akun Rupie kamu",
+    "email": "Email",
+    "emailPlaceholder": "kamu@contoh.com",
+    "password": "Kata sandi",
+    "passwordPlaceholder": "Kata sandi kamu",
+    "submit": "Masuk",
+    "loading": "Sedang masuk…",
+    "noAccount": "Belum punya akun?",
+    "signupLink": "Daftar"
+  },
+  "signup": {
+    "title": "Buat akun",
+    "subtitle": "Mulai catat pengeluaranmu dengan Rupie",
+    "email": "Email",
+    "emailPlaceholder": "kamu@contoh.com",
+    "password": "Kata sandi",
+    "passwordPlaceholder": "Min. 6 karakter",
+    "confirmPassword": "Konfirmasi kata sandi",
+    "confirmPasswordPlaceholder": "Masukkan ulang kata sandi",
+    "submit": "Daftar",
+    "loading": "Membuat akun…",
+    "hasAccount": "Sudah punya akun?",
+    "loginLink": "Masuk"
+  },
+  "validation": {
+    "emailRequired": "Email wajib diisi",
+    "emailInvalid": "Masukkan email yang valid",
+    "passwordRequired": "Kata sandi wajib diisi",
+    "passwordTooShort": "Kata sandi minimal 6 karakter",
+    "confirmPasswordRequired": "Konfirmasi kata sandi kamu",
+    "passwordsMismatch": "Kata sandi tidak cocok"
+  },
+  "theme": {
+    "light": "Terang",
+    "dark": "Gelap"
+  },
+  "lang": {
+    "label": "Bahasa"
+  }
+}
