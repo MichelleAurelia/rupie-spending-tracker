@@ -29,6 +29,19 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+## Database Setup
+
+The database is powered by Supabase (PostgreSQL). Schema migrations are located in `supabase/migrations/`.
+
+To apply the initial schema:
+1. Open the **SQL Editor** in your Supabase project dashboard.
+2. Paste the contents of [`supabase/migrations/001_init.sql`](./supabase/migrations/001_init.sql) and run it.
+
+### Schema Overview:
+- **`profiles`**: Stores per-user settings (`display_name`, `monthly_income`, `payday_day`). Automatically created upon user sign-up via an `auth.users` trigger.
+- **`expenses`**: Tracks user spending events (`amount`, `category`, `spent_at`, `note`, `rating`, `rated_at`).
+- **Row Level Security (RLS)**: Enabled on both tables with strict per-user policies (`USING (auth.uid() = ...)` and `WITH CHECK`) ensuring users can only read and write their own data.
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
